@@ -5,8 +5,12 @@ import cv2
 
 app = Flask(__name__)
 
-FOLDER = "<your-media-path>" #replace with your path
+FOLDER = "<your-media-path>" #replace with your foldername
 THUMB_FOLDER = "thumbs"
+
+#or add the path 
+#FOLDER = r"<you-folder-path\>" eg:  FOLDER = r"C:\Users\Lenovo\Downloads\Telegram Desktop"
+#THUMB_FOLDER = r"<your-folder-path>\thumbs" eg:  THUMB_FOLDER = r"C:\Users\Lenovo\Downloads\thumbs"
 
 os.makedirs(FOLDER, exist_ok=True)
 os.makedirs(THUMB_FOLDER, exist_ok=True)
